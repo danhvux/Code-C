@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main()
+{
+	int h,t,tong,them;
+	printf("Nhap so gio lam:");
+	scanf("%d",&h);
+	printf("Luong theo gio:");
+	scanf("%d",&t);
+	
+	if(h>40)
+	{
+		them= (h-40)*1.5+40;
+		tong=them*t;
+		printf("Tong luong:%d",tong);
+	}
+	else
+	tong=h*t;
+	printf("Tong luong:%d",tong);
+	
+	
+}

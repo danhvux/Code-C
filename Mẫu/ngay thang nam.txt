@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+    int ngay, thang , nam;
+    printf("Nhap ngay:");
+    scanf("%d",&ngay);
+    printf("\nNhap thang:");
+    scanf("%d",&thang);
+    printf("\nNhap nam:");
+    scanf("%d",&nam);
+    printf("%d/%d/%02d",ngay,thang,nam%2000);
+}

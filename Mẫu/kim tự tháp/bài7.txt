@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main ()
+{
+	int n,a,b,c,d;
+	printf("Nhap so n:");
+	scanf("%d",&n);
+
+	for (a=1;a<=n;a++)
+	{
+		for(c=n;c>a;c--)
+		{
+			printf(" ");
+		}
+		for(b=a;b<=(a*2)-1;b++)
+		{
+			printf("%d",b);
+		}
+		for(d=(a*2)-2;d>=a;d--)
+		{
+			printf("%d",d);
+		}
+		
+		printf("\n");
+	}
+}

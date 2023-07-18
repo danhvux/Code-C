@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+int main()
+{
+	char input, alpha ='A',belta ='a'; //65-65
+	printf("Nhap chu cai:");
+	scanf("%c",&input);
+	
+	if(input <= 90)
+	{
+	
+	for (int i=1;i<=(input-'A'+1);i++)
+	{
+		
+	for(int b=1; b<=i;b++)
+	{
+		printf("%c",alpha);
+	}
+	alpha++;
+		printf("\n");
+	}
+	}
+	if(input>=97)
+	{
+		
+	for (int i=1;i<=(input-'a'+1);i++)
+	{
+		
+	for(int b=1; b<=i;b++)
+	{
+		printf("%c",belta);
+	}
+	belta++;
+		printf("\n");
+	}
+	}
+}

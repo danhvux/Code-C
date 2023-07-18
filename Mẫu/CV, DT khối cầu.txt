@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+#define PI 3.14
+
+int  main()
+{   
+
+    int r;
+    float dt,cv;
+
+    printf("Nhap ban kinh R:\n");
+    scanf("%d",&r);
+    dt= 4*PI*r*r;
+    cv= (4/3)*PI*r*r*r;
+    printf("Dien tich hinh cau la:%f\n", dt);
+    printf("Chu vi hinh cau la: %f",cv);
+    getch();
+}
+

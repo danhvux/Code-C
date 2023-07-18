@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+void main(void)
+{
+    int b[100],a,i;
+    printf("Nhap so thap phan:");
+    scanf("%d",&a);
+    for(i=0;a>0;i++){
+        b[i]= a%2;
+        a = a/2;
+    }
+    printf("Dang nhi phan cua so vua nhap la:");
+    for(i= i-1;i>=0;i--){
+        printf("%d",b[i]);
+    }
+    getch();
+}

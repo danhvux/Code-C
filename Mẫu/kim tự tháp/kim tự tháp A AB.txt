@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+	char input, alpha='A',belta='a';//65-65+1
+	printf("Nhap chu :");
+	scanf("%c",&input);
+	for(int b=1;b<=(input-'A'+1);b++)
+	{
+		for(int c=0; c<b;c++)
+		{
+			printf("%c",alpha+c);
+		}
+		printf("\n");
+	}
+}
+

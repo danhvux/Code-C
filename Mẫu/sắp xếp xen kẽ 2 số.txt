@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char n[50];
+    char m[50];
+    printf("Nhap so thu nhat:");
+    gets(n);
+    printf("%d\n",strlen(n));
+    
+    printf("Nhap so thu hai:");
+    gets(m);
+    printf("%d\n",strlen(m));
+ 	
+ 	if(strlen(m)<strlen(n))
+ 	{
+ 		for(int i=0; i<=strlen(n)-1;i++)
+ 		{
+ 			if(m[i]==NULL)
+ 			{
+ 			printf("%c",n[i]);
+ 			}
+ 			else
+ 			{
+ 			printf("%c",n[i]);
+ 			printf("%c",m[i]);	
+			}
+		}
+	}
+	if(strlen(m)>strlen(n))
+		for(int i=0; i<=strlen(m)-1;i++)
+		{		
+			if(n[i]==NULL)
+			{
+			printf("%c",m[i]);
+			}
+			else
+			{
+			printf("%c",n[i]);
+			printf("%c",m[i]);
+			}
+		}
+	else
+	{
+		for(int i=0; i<=strlen(n)-1;i++)
+ 		{
+ 		printf("%c",n[i]);
+ 		printf("%c",m[i]);
+		}
+	}
+}

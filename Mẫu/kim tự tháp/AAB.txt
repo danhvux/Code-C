@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main()
+{
+	int a,c;
+	char input, alpha='A';
+	printf("Nhap chu cai:");
+	scanf("%c",&input);
+
+	for(a=1;a<=(input-'A'+1);a++)//66-65+1
+	{
+		for(c=0;c<a;c++)
+		{
+			printf("%c",alpha+c);
+		}
+		printf("\n");
+	}
+}

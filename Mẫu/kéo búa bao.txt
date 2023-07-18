@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <conio.h>
+
+
+int main()
+{
+    int a,b;
+    printf("1.B\n");
+    printf("2.K\n");
+    printf("3.G\n");
+    printf("Nguoi a chon:\n");
+    scanf("%d",&a);
+    // printf("Nguoi b chon:\n");
+    // scanf("%d",&b);
+    switch(a)
+    {
+        case 1:
+        printf("Nguoi b chon:\n");
+        scanf("%d",&b);
+            switch(b)
+            {
+                case 1: printf("Hoa\n");break;
+                case 2: printf("A Thang\n");break;
+                case 3: printf("A Thua\n");break;
+                break;
+            }
+        break;
+        case 2:
+        printf("Nguoi b chon:\n");
+        scanf("%d",&b);
+            switch(b)
+            {
+                case 1: printf("A Thua\n");break;
+                case 2: printf("Hoa\n");break;
+                case 3: printf("A Thang\n");break;
+                break;
+            }
+        break;
+        case 3:
+        printf("Nguoi b chon:\n");
+        scanf("%d",&b);
+            switch(b)
+            {
+                case 1: printf("A Thang\n");break;
+                case 2: printf("A Thua\n");break;
+                case 3: printf("Hoa\n");break;
+                break; 
+            }
+        break;
+    }
+}  

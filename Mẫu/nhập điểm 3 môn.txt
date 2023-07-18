@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main()
+{
+	int t,l,h,sum;
+	printf("Nhap diem toan:");
+	scanf("%d",&t);
+	printf("Nhap diem ly:");
+	scanf("%d",&l);
+	printf("Nhap diem hoa:");
+	scanf("%d",&h);
+	sum=t+l+h;
+	
+	if(sum>=15)
+	{
+		if(t>=4 && l>=4 && h>=4)
+		{
+			printf("Dau\n");
+			if(t>5 && l>5 && h>5)
+			{
+				printf("Hoc deu cac mon");	
+			}
+			else
+				printf("Hoc chua deu cac mon");	
+		}
+	}
+	else
+	{
+		printf("Thi hong");		
+	}
+	
+}

@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <conio.h>
+void main(void)
+{
+    int a,i,t;
+    char b[100];
+    printf("Nhap so thap phan:");
+    scanf("%d",&a);
+    for(i=0;a>0;i++){
+        t= a%16;
+         if(t<=9){
+            b[i]= t;
+         } 
+         else if (t==10)
+         {
+            b[i]= 'A';
+         }
+        else if(t==11)
+        {
+             b[i]= 'B';
+
+        }
+        else if(t==12)
+        {
+            b[i]= 'C';
+        }
+        else if (t==13)
+        {
+            b[i]= 'D';
+        }
+        else if (t==14)
+        {
+            b[i]= 'E';
+        }
+        else if (t==15)
+        {
+            b[i]= 'F';
+        }; 
+        a=a/16;
+    }
+    printf ("Dang nhi phan cua so vua nhap la:");
+    for(i= i-1;i>=0;i--){
+        if (b[i]>=48 && b[i]<=57)
+        {   
+            printf("%d",b[i]);
+        }
+        else if (b[i]>=65 && b[i]<=70)
+        {
+            printf("%c",b[i]);
+        }
+        
+    }
+    getch();
+}

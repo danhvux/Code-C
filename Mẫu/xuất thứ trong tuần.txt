@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+int main()
+{
+	int ngay,thang,nam;
+	printf("Nhap ngay:");
+	scanf("%d",&ngay);
+	printf("Nhap thang:");
+	scanf("%d",&thang);
+	printf("Nhap nam:");
+	scanf("%d",&nam);
+	
+	int y0=nam-(14-thang)/12;
+	int x=y0+y0/4-y0/100+y0/400;
+	int m0=thang+12*((14-thang)/12)-2;
+	int ngaytrongtuan=(ngay+x+31*m0/12)%7;
+	
+	switch(ngaytrongtuan)
+	{
+		case 0: printf("Chu nhat");
+		break;
+		case 1: printf("Thu hai");
+		break;
+		case 2: printf("Thu ba");
+		break;
+		case 3: printf("Thu tu");
+		break;
+		case 4: printf("Thu nam");
+		break;
+		case 5: printf("Thu sau");
+		break;
+		case 6: printf("Thu bay");
+		break;
+	}
+	
+}
